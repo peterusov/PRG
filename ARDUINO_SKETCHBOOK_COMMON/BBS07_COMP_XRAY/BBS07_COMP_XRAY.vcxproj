@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6DAC68BA-FBFF-406D-8A2D-52882A16E2CF}</ProjectGuid>
+    <RootNamespace>BBS07_COMP_XRAY</RootNamespace>
+    <ProjectName>BBS07_COMP_XRAY_V1.3</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>W:\PROGRAMMING\ArduinoIDE15\hardware\arduino\RFduino\cores\arduino;W:\PROGRAMMING\ArduinoIDE15\hardware\arduino\RFduino\variants\RFduino;W:\PROGRAMMING\ArduinoIDE15\Sketchbook\libraries\TimedAction;W:\PROGRAMMING\ArduinoIDE15\Sketchbook\libraries\TimedAction\utility;W:\PROGRAMMING\ArduinoIDE15\Sketchbook\libraries\SFE_HMC6343;W:\PROGRAMMING\ArduinoIDE15\Sketchbook\libraries\SFE_HMC6343\utility;W:\PROGRAMMING\ArduinoIDE15\hardware\arduino\RFduino\libraries\RFduinoBLE;W:\PROGRAMMING\ArduinoIDE15\hardware\arduino\RFduino\libraries\RFduinoBLE\utility;W:\PROGRAMMING\ArduinoIDE15\hardware\arduino\RFduino\libraries\Wire;W:\PROGRAMMING\ArduinoIDE15\hardware\arduino\RFduino\libraries\Wire\utility;W:\PROGRAMMING\ArduinoIDE15\libraries;W:\PROGRAMMING\ArduinoIDE15\hardware\arduino\RFduino\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;W:\PROGRAMMING\ArduinoIDE15\Sketchbook\libraries;W:\PROGRAMMING\ArduinoIDE15\hardware\tools\gcc-arm-none-eabi-4.8.3-2014q1\gcc-arm-none-eabi-4.8.3-2014q1\include;W:\PROGRAMMING\ArduinoIDE15\hardware\tools\gcc-arm-none-eabi-4.8.3-2014q1\gcc-arm-none-eabi-4.8.3-2014q1\include;W:\PROGRAMMING\ArduinoIDE15\hardware\tools\gcc-arm-none-eabi-4.8.3-2014q1\lib\gcc\arm-none-eabi\4.8.3\include;W:\PROGRAMMING\ArduinoIDE15\hardware\tools\gcc-arm-none-eabi-4.8.3-2014q1\lib\gcc\arm-none-eabi\4.8.3\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>W:\PROGRAMMING\ArduinoIDE15\Sketchbook\BBS07_COMP_XRAY\Visual Micro\.BBS07_COMP_XRAY.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__RFduino__;_VMDEBUG=1;ARDUINO=158;ARDUINO_MAIN;printf=iprintf;__RFDUINO__;F_CPU=16000000;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>W:\PROGRAMMING\ArduinoIDE15\hardware\arduino\RFduino\cores\arduino;W:\PROGRAMMING\ArduinoIDE15\hardware\arduino\RFduino\variants\RFduino;W:\PROGRAMMING\ArduinoIDE15\hardware\arduino\RFduino\libraries\RFduinoBLE;W:\PROGRAMMING\ArduinoIDE15\hardware\arduino\RFduino\libraries\RFduinoBLE\utility;W:\PROGRAMMING\ArduinoIDE15\Sketchbook\libraries\TimedAction;W:\PROGRAMMING\ArduinoIDE15\Sketchbook\libraries\TimedAction\utility;W:\PROGRAMMING\ArduinoIDE15\Sketchbook\libraries\Ultrasonic;W:\PROGRAMMING\ArduinoIDE15\Sketchbook\libraries\Ultrasonic\utility;W:\PROGRAMMING\ArduinoIDE15\libraries;W:\PROGRAMMING\ArduinoIDE15\hardware\arduino\RFduino\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;W:\PROGRAMMING\ArduinoIDE15\Sketchbook\libraries;W:\PROGRAMMING\ArduinoIDE15\hardware\tools\gcc-arm-none-eabi-4.8.3-2014q1\gcc-arm-none-eabi-4.8.3-2014q1\include;W:\PROGRAMMING\ArduinoIDE15\hardware\tools\gcc-arm-none-eabi-4.8.3-2014q1\gcc-arm-none-eabi-4.8.3-2014q1\include;W:\PROGRAMMING\ArduinoIDE15\hardware\tools\gcc-arm-none-eabi-4.8.3-2014q1\lib\gcc\arm-none-eabi\4.8.3\include;W:\PROGRAMMING\ArduinoIDE15\hardware\tools\gcc-arm-none-eabi-4.8.3-2014q1\lib\gcc\arm-none-eabi\4.8.3\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>W:\PROGRAMMING\ArduinoIDE15\Sketchbook\BBS07_COMP_XRAY\Visual Micro\.BBS07_COMP_XRAY.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>__RFduino__;ARDUINO=158;ARDUINO_MAIN;printf=iprintf;__RFDUINO__;F_CPU=16000000;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="BBS07_COMP_XRAY_V1.3.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Visual Micro\.BBS07_COMP_XRAY.vsarduino.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.upload.port="COM23" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
